@@ -1,2 +1,5 @@
-# adivinha
-Projeto me Python de um jogo de adivinhação de um número
+<h1 align = "center">
+  :construction: :construction: :construction: 
+  Projeto em desenvolvimento 
+  :construction: :construction: :construction: 
+</h1>
