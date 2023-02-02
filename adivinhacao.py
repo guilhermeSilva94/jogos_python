@@ -3,15 +3,21 @@ print('*' * 33)
 
 numero_secreto = 42
 
-contador_tentativas = 1
+#contador_tentativas = 1
 total_tentativas = 3
 
-while(contador_tentativas < total_tentativas + 1):
+#while(contador_tentativas < total_tentativas + 1):
+for contador_tentativas in range(1, total_tentativas + 1):
     
     print('Tentativa {} de {}' .format(contador_tentativas, total_tentativas))
     print('*' * 16)
 
-    chute = int(input('Digite um número: '))
+    chute = int(input('Digite um número entre 1 e 100: '))
+
+    if (chute < 1 or chute > 100):
+        print('Digite um número entre 1 e 100!')
+        print('')
+        continue
 
     acertou = numero_secreto == chute
     chute_maior = numero_secreto > chute
@@ -19,7 +25,7 @@ while(contador_tentativas < total_tentativas + 1):
 
     if(acertou):
         print('Você acertou!!')
-        contador_tentativas = total_tentativas + 1
+        break
     elif(chute_menor):
         print('Você errou! O número secreto é menor')
         print('')
