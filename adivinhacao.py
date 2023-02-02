@@ -1,10 +1,12 @@
+from random import randrange
+
 print('Bem vindo no jogo de Adivinhação!')
 print('*' * 33)
 
-numero_secreto = 42
+numero_secreto = round(randrange(1, 101))
 
 #contador_tentativas = 1
-total_tentativas = 3
+total_tentativas = 5
 
 #while(contador_tentativas < total_tentativas + 1):
 for contador_tentativas in range(1, total_tentativas + 1):
